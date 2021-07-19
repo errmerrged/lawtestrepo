@@ -36,3 +36,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Test env command
+        run: |
+          echo "WORKSPACE=main" >> $GITHUB_ENV
+          echo TESTTESTTESTTEST
+          echo $GITHUB_ENV
