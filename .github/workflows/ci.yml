@@ -44,4 +44,4 @@ jobs:
           echo $GITHUB_ENV
 
       - name: Check environment variable values
-        run: echo $GITHUB_ENV.WORKSPACE 
+        run: echo The workspace is ${{env.WORKSPACE}}
