@@ -48,3 +48,6 @@ jobs:
 
       - name: Check github.ref
         run: echo ${{github.ref}}
+
+      - name: Check if develop branch
+        run: echo ${GITHUB_REF#refs/heads/}
