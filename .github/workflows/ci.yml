@@ -45,3 +45,6 @@ jobs:
 
       - name: Check environment variable values
         run: echo The workspace is ${{env.WORKSPACE}}
+
+      - name: Check github.ref
+        run: echo ${{github.ref}}
